@@ -27,3 +27,24 @@ var myValue =0, myvalue = 30;
 document.write("<br>"+myValue+" , "+myvalue);
 
 const a1 = 2;
+
+// Comparison, Logical and Conditional Operators
+
+var a = 10;
+var b = 20;
+var c = "10";
+document.write("<br>");
+document.write(a==b); 
+document.write("<br>");
+document.write(a!=b);
+document.write("<br>");
+document.write(a===c); // return false as a is int type and c is string type
+
+document.write("<br>");
+
+var d = (a===c); // compare the value and store data in d 
+document.write(d);
+document.write("<br>");
+
+var e =  (a===c) ? "yes same type":"not same type";
+document.write(e);
