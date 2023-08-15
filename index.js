@@ -48,3 +48,12 @@ document.write("<br>");
 
 var e =  (a===c) ? "yes same type":"not same type";
 document.write(e);
+document.write("<br>");
+
+var f = (a==c)? "same value ": "not same value";
+document.write(f);
+document.write("<br>");
+
+var g = (a==c) && (a===c)? "same value and same type" : "same value different type"
+document.write(g);
+
