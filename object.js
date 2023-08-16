@@ -13,6 +13,7 @@ document.write("<br>");
 //making a object empty
 student = {};
 
+
 //adding value in object
 student.name = "Imran";
 document.write(student.name);
