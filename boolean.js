@@ -1,6 +1,6 @@
-document.write(10>9);
+document.write(10>9); //return true
 document.write("<br>");
-document.write("Hello" == "Hello");
+document.write("Hello" == "Hello"); //return true
 document.write("<br>");
 document.write("Hello" == "World");
 
@@ -15,6 +15,7 @@ x =null;
 document.write("<br>");
 document.write(x);
 document.write(Boolean(x)); //return false for null value 
+
 x =0;
 document.write("<br>");
 document.write(x);
