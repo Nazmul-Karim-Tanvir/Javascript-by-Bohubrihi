@@ -42,7 +42,7 @@ numbers.push("One")
 document.write(numbers);
 document.write("<br>");
 
-
+//string to array convertion
 var x = "Bangladesh";
 var y = x.split("");
 document.write(y);
