@@ -46,4 +46,4 @@ document.write( s = s.toLowerCase());
 
 var new1 = "   NK Tanvir   ";
 document.write("<br>");
-document.write( new1.trim()); //it removes space from start, end side
+document.write( new1.trim()); //it removes space from start, end 
