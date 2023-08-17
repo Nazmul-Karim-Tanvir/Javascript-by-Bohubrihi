@@ -77,7 +77,7 @@ var result = (x===123.45);
 document.write("<br>");
 document.write(result);
 var m;
-m = isNaN(m); // use to check if value of a variable is nun or not 
+m = isNaN(m); // use to check if value of a variable is nan or not 
 document.write("<br>");
 document.write(m);
 
