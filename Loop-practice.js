@@ -50,8 +50,8 @@ for (var i = 1; i <= 10; i++) {
     if (i == 5) {
         break; //break or stop the loop when value of i = 5
     }
-    else{
-        document.write(i+" "); //prints upto 5 
+    else {
+        document.write(i + " "); //prints upto 5 
     }
 }
 document.write("<br>");
@@ -79,3 +79,12 @@ for (var i = 1; i <= 50; i++) {
     }
 }
 document.write("<br>");
+
+//String and array
+
+let food = ["cake", "chocolate", "Ice Cream"];
+
+for (var i = 0; i < food.length; i++) {
+    document.write("index " + i + " = " + food[i]);
+    document.write("<br>");
+}
