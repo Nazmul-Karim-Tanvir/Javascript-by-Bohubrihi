@@ -87,4 +87,55 @@ document.write(arr.concat(a)); // array + string = array
 document.write(country.sort()); //sort in ascending order
 document.write("<br>");
 document.write(country.reverse()); // sort in descending order
+document.write("<br>");
+
+
+// more on arrays
+var array1 = [1,2,3,4,5,6,["NK","Tanvir"],8];
+
+document.write(array1);
+document.write("<br>");
+
+document.write(array1[6][0]);
+document.write("<br>");
+
+document.write(array1[6][1]);
+document.write("<br>");
+
+var a = [1,3,{a:1,b:3,c:[1,3,4,{x:5,y:10}]}];
+
+document.write(a);
+document.write("<br>");
+
+
+//four different ways to access x =5 form a array
+document.write("x = "+a[2]["c"][3]["x"]);
+document.write("<br>");
+
+document.write("x = "+a[2].c[3].x);
+document.write("<br>");
+
+document.write("x = "+a[2]["c"][3].x);
+document.write("<br>");
+
+document.write("x = "+a[2].c[3]["x"]);
+document.write("<br>");
+
+
+// Premitive types
+// number , string, boolean
+
+var a =10;
+var b =20;
+a = 50;
+document.write(b);
+document.write("<br>");
+//Reference type 
+//array , object
+
+var number1 = [10,20,30];
+var number2 = number1;
+var number1 = [100];
+document.write(number2);
+
 
