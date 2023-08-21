@@ -21,7 +21,7 @@ class Person{
 
 }
 
-let person1 = new Person("Fazle","Rahet","9-14-1998");
+let person1 = new Person("Fazle","Rahat","9-14-1998");
 
 
 document.write(person1.firstname);
