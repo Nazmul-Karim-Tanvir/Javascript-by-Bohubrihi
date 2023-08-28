@@ -52,9 +52,27 @@ re = /^([0-9]xy){4}/;
 re = /^01[0-9]{9}$/;
 re = /^\+8801[0-9]{9}$/;
 //str = "2xy1xy3xy3xy";
-str = "+8801788888888";
+// str = "+8801788888888";
+
+//Shorthand Character Classes
+re = /\w/; // word Character -alpha numeric or_
+re = /\W/; // non word character like */+-
+re = /\w+/; // one or more 
+re = /\d/; // digit
+re = /\d+/; // one or more
+re = /\D/;// non word character like */+-
+re = /\s/; // match with white space
+re = /\S/; // Match non-white space
+re = /hello\b/; // must need space after hello
+re = /\bhello\b/; // must need space before and after hello
 
 
+//Assertions 
+re = /x(?=y)/; //x need to apear befor y and connected
+re = /x(?!y)/;//y should not be connected to x
+
+
+str = "x y";
 
 reTest(re,str);
 function reTest(re,str){
