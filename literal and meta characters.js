@@ -23,11 +23,15 @@ re  = /he?ll?o/; // ? represent optional
 
 re = /hello?/; // escape everithing after question mark so {hello world} matches with  {hello?}
 
+// Character Set Using Brackets []
+
+re = /h[eai]llo/; // must be one of them inside brackets and only one at atime
+re = /[ha]ello/; 
 
 str = "Hello world";
 str = "Again hllo World";
-str = "hllo";
-str = "hello world";
+str = "Hello";
+str = "haahaaahhaahaahhhahaaaahhhahahello world";
 reTest(re,str);
 function reTest(re,str){
     if(re.test(str)){
