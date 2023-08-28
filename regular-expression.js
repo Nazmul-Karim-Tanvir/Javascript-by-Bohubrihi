@@ -14,7 +14,7 @@ result = str.match(re);// match is a string function opposite of excp but do sam
 result = str.search(re);// returns first index value where re is found 
 
 
-let newstr  = str.replace(re,"Hi"); // use to replace ina string 
+let newstr  = str.replace(re,"Hi"); // use to replace in a string 
 
 console.log(result);
 console.log(newstr);
