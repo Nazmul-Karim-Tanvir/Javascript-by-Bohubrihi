@@ -11,6 +11,7 @@ let clear_task = document.querySelector("#clear-task");
 form_task.addEventListener("submit", createTask);
 list_task.addEventListener("click", removeTask);
 clear_task.addEventListener("click", clearTask);
+filter_task.addEventListener("keyup", filterTask);
 
 //Define Function
 
@@ -48,12 +49,39 @@ function removeTask(e) {
 }
 
 // clearTask
-function clearTask(e){
-     list_task.innerHTML = "";
-     
-     //faster way 
+function clearTask(e) {
+    list_task.innerHTML = "";
+
+    //faster way 
     // while (list_task.firstChild) {
     //     list_task.removeChild(list_task.firstChild);
     // }
-    
+
 }
+
+
+// filterTask
+
+function filterTask(e) {
+    let liText = e.target.value.toLowerCase();
+
+    let temp = document.querySelectorAll("li");
+
+    temp.forEach(task =>{
+
+        let item = task.firstChild.textContent.toLowerCase();
+
+        if(item.includes(liText)){
+            task.style.display = "block";
+        }
+        else{
+            task.style.display = "none";
+        }
+
+    });
+}
+
+
+
+
+
