@@ -38,7 +38,11 @@ class UI {
     static deleteFromBook(target) {
         if (target.hasAttribute("href")) {
             target.parentElement.parentElement.remove();
-            UI.showAlert("Book Removed!", "success");
+            
+            //removes books from store 
+            Store.removeBook(target.parentElement.previousElementSibling.textContent.trim());
+
+            UI.showAlert("Book Removed!", "success"); 
         }
 
     }
@@ -66,11 +70,58 @@ class UI {
 
 }
 
+// Local Storage Class
+class Store{
+    //get book from local storage 
+    static getBooks(){
+        let books ;
+        if (localStorage.getItem("books") === null){
+            books = [];
+        }
+        else{
+            books = JSON.parse(localStorage.getItem("books"));
+        }
+        return books;
+    }
+
+    //add book to local storage 
+    static storeBooks(book){
+        let books = Store.getBooks();
+        books.push(book);
+
+        localStorage.setItem("books",JSON.stringify(books));
+    }
+
+
+    //display existing book in local storage when page refresh 
+    static displaBooks(){
+        let books = Store.getBooks();
+
+        books.forEach(book =>{
+            UI.addToBookList(book);
+        });
+    }
+
+    //remove book from local storage 
+    static removeBook(isbn){
+        let books = Store.getBooks();
+
+        books.forEach((book,index) => {
+            if (book.isbn === isbn){
+                books.splice(index,1);
+            }
+        });
+
+        localStorage.setItem("books",JSON.stringify(books));
+    }
+
+}
 
 
 // Add event listener 
 form.addEventListener("submit", newBook);
 booklist.addEventListener("click", removeBook);
+document.addEventListener("DOMContentLoaded",Store.displaBooks());
 
 
 // newBook 
@@ -89,6 +140,7 @@ function newBook(e) {
         UI.addToBookList(book);
         UI.clearFields();
         UI.showAlert("Book Added!", "success");
+        Store.storeBooks(book);
     }
     e.preventDefault();
 }
