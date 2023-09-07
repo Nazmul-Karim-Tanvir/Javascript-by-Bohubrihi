@@ -1,6 +1,6 @@
-class UI{
+class UI {
     constructor() {
-        this.profile = document.querySelector("#profile");
+        this.profile = document.querySelector('#profile');
     }
 
     showProfile(user) {
@@ -33,6 +33,7 @@ class UI{
     clearProfile() {
         this.profile.innerHTML = "";
     }
+
     showAlert(message, className) {
         this.clearAlert();
         this.clearProfile();
@@ -50,5 +51,4 @@ class UI{
             currentAlert.remove();
         }
     }
-
 }
