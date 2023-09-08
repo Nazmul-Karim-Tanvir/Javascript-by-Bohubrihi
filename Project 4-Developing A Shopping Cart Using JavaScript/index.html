@@ -9,18 +9,21 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
-<body>
-    <nav class="navbar text-light align-content-center" style="background: linear-gradient(to right, #fb00ff, #00b3ff)">
+<body style="padding: 60px;">
+    <nav class="navbar fixed-top text-light align-content-center"
+        style="background: linear-gradient(to right, #fb00ff, #00b3ff)">
         <h4 class="m-auto p-2">A Shopping Cart Using JavaScript</h4>
 
-        <button id="shoping-cart" class="nav-item btn btn-success btn-outline-light m-auto ">View Shopping Cart</button>
+        <button id="view-shopping-cart" class="nav-item btn btn-success btn-outline-light m-auto" href="#shopping-cart">View Shopping
+            Cart
+        </button>
     </nav>
-    
-    <div class="container-fluid border-black py-2 my-3 border rounded align-items-center" >
-        <h4 class=" rounded py-2 my-3 display-6">Add your fabourite Item Now</h4>
+
+    <div class="container-fluid shadow py-1 mt-5 border rounded align-items-center">
+        <h6 class=" rounded py-2 my-3 display-6">Add your fabourite Item Now</h4>
     </div>
 
-    <div class="container-fluid m-auto p-2">
+    <div class="container-fluid py-1">
         <div class="row">
             <!-- product 1 -->
             <div class="col-md-3 m-auto">
@@ -33,7 +36,7 @@
                             Price: 45000$
                         </p>
 
-                        <button class="btn btn-success">
+                        <button id="camera" class="btn btn-success">
                             Add to Cart
                         </button>
                     </div>
@@ -51,7 +54,7 @@
                             Price: 3500$
                         </p>
 
-                        <button class="btn btn-success">
+                        <button id="Earphones" class="btn btn-success">
                             Add to Cart
                         </button>
                     </div>
@@ -69,8 +72,7 @@
                             Price: 115000$
                         </p>
 
-
-                        <button class="btn btn-success">
+                        <button id="laptop" class="btn btn-success">
                             Add to Cart
                         </button>
                     </div>
@@ -78,19 +80,18 @@
                 </div>
             </div>
 
-             <!-- product 4 -->
-             <div class="col-md-3 m-auto">
+            <!-- product 4 -->
+            <div class="col-md-3 m-auto">
                 <div class="card align-items-center border-black">
                     <div class="card-body">
                         <img class="img-fluid" src="image/laptop.jpg" alt="">
-                        <h5 class="card-title">Laptop</h5>
-                        Asus Vivobook S15 OLED
+                        <h5 class="card-title">Computer</h5>
+                        Vision pro
                         <p>
                             Price: 115000$
                         </p>
 
-
-                        <button class="btn btn-success">
+                        <button id="computer" class="btn btn-success">
                             Add to Cart
                         </button>
                     </div>
@@ -98,6 +99,20 @@
                 </div>
             </div>
 
+        </div>
+        <hr>
+        <div id="shopping-cart" class="row">
+            <h4>Shopping Cart</h4>
+            <ol>
+                <li>jfhfhd</li>
+                <li>jfhfhd</li>
+                <li>jfhfhd</li>
+                <li>jfhfhd</li>
+                <li>jfhfhd</li>
+                <li>jfhfhd</li>
+                <li>jfhfhd</li>
+                <li>jfhfhd</li>
+            </ol>
         </div>
 
     </div>
