@@ -21,6 +21,7 @@ products.forEach(function (product) {
 });
 
 shoppingCartItem.addEventListener("click", removeShoppingItem);
+document.addEventListener("DOMContentLoaded", getShoppingCart);
 
 
 
@@ -55,11 +56,20 @@ function removeShoppingItem(e) {
   if (e.target.classList.contains("badge")) {
     if (confirm("Are you sure ?")) {
       let ele = e.target.parentElement;
+
+      // get the list of all list items
+      let items = document.querySelectorAll("#shopping-cart-item li");
+      // convert the list to an array
+      let itemsArray = Array.from(items);
+      // get the index of the removed element in the array
+      var order = itemsArray.indexOf(ele); 
       ele.remove();
+      removeFromLocalStorage(order);
     }
   }
   e.preventDefault();
 }
+
 
 
 //addToLocalStorage 
@@ -77,5 +87,47 @@ function addToLocalStorage(product) {
   localStorage.setItem("products", JSON.stringify(products));
 }
 
-//removeFromLocalStorage
+// getproducts // when page reload
 
+function getShoppingCart() {
+  let products;
+  if (localStorage.getItem("products") === null) {
+    products = [];
+  }
+  else {
+    products = JSON.parse(localStorage.getItem("products"));
+  }
+
+  shoppingCartItem.innerHTML = "";
+  products.forEach(product => {
+    let text = product;
+    let li = document.createElement("li");
+    li.innerHTML = ` <i>${text}</i> <button class= "badge text-bg-danger"> Remove  </button>`;
+
+    shoppingCartItem.appendChild(li);
+
+  });
+
+}
+
+
+
+// //removeFromLocalStorage
+function removeFromLocalStorage(index) {
+  let products;
+  if (localStorage.getItem("products") === null) {
+    products = [];
+  }
+  else {
+    // get the array of products from the local storage
+    products = JSON.parse(localStorage.getItem("products"));
+  }
+  // check if the array is not empty
+  if (products.length > 0) {
+    // remove the element at the given index from the array
+    products.splice(index, 1);
+    // update the local storage with the modified array
+    localStorage.setItem("products", JSON.stringify(products));
+  }
+
+}
