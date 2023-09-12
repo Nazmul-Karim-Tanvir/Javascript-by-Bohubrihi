@@ -40,13 +40,13 @@ function game() {
     }
 
     else if (value < secret) {
-        message.textContent = "Too low. Try a higher number.";
+        message.textContent = "Hint: Too low. Try a higher number.";
         message.style.color = "red";
 
         this.disabled = true;
     }
     else if (value > secret) {
-        message.textContent = "Too high. Try a lower number.";
+        message.textContent = "Hint: Too high. Try a lower number.";
         message.style.color = "red";
 
         this.disabled = true;
