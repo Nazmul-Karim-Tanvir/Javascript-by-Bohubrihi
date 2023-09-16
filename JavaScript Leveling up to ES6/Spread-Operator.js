@@ -21,3 +21,17 @@ let person = {
 
 let newPerson = {...person,dob:"08-26-1995"};
 console.log(newPerson);
+
+// Spread on Function 
+
+let numbers = [23,1,0,-1,500];
+let a = Math.max(...numbers);
+
+console.log(a);
+
+let person2 = ["Simanta","Paul"];
+
+let test  = (fname,lname) => {
+    console.log(`Hello ${fname} ${lname}`);
+}
+test(...person2);
