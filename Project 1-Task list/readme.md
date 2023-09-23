@@ -21,7 +21,7 @@ This is a responsive web application that allows you to create , filter and dele
 - You can delete all the tasks by clicking the Clear all list button.
 - The tasks are saved in the local storage of the browser, so they will persist even if you close or refresh the page.
 
-## Built with
+## Built With
 
 - HTML5 
 - CSS

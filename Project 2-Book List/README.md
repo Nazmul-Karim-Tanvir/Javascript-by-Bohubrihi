@@ -9,7 +9,7 @@
 - [Useful resources](#useful-resources)
 
 ## Overview Book List
-This is a responsive web application that allows you to create book list 
+This is a responsive web application that allows you to create and remove book list of your choices . And stores the information in your local browser storage so that keep proper tracks of your item. 
 
 - Desktop view![](images/desktop-view.JPG) 
 - Mobile view![](images/mobile-view.JPG)
@@ -27,6 +27,7 @@ This is a responsive web application that allows you to create book list
 - CSS
 - Bootstrap
 - JavaScript
+- Object Oriented Programming 
 
 ## My Procedure
 To create this web application, I followed these steps:
