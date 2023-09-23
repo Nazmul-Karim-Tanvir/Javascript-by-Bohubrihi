@@ -9,9 +9,10 @@
 - [Useful resources](#useful-resources)
 
 ## Overview Task List
-This is a simple web application that allows you to create , filter and delete tasks. It uses HTML, CSS, Bootstrap and JavaScript to create a user friendly interface and store the tasks in the local storage of the browser.
+This is a responsive web application that allows you to create , filter and delete tasks. It uses HTML, CSS, Bootstrap and JavaScript to create a user friendly interface and store the tasks in the local storage of the browser.
 
-
+- Desktop view![](images/desktop-view.JPG) 
+- Mobile view![](images/mobile-view.JPG)
 
 ## Features
 - You can add a new task by typing it in the input field and clicking the Add button.
