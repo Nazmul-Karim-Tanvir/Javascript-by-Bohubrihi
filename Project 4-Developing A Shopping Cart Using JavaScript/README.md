@@ -17,6 +17,7 @@ This is a responsive web application that allows you to add and remove products 
 -![](image/mobile-view-2.JPG)
 
 ## Chellenge
+You will develop an e-commerce shopping cart where users can add or remove items from a list of products.
 - Any part of a web page will have a list of products
 - Each product will have a price and an Add to Cart button
 - You can show the cart below or to the left of the product list, the cart will be empty initially
