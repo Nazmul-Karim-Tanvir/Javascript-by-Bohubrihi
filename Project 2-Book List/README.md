@@ -3,7 +3,7 @@
 - [Overview Book List](#overview-bask-list)
 - [Features](#features)
 - [Procedure](#procedure)
-- [My process](#my-process)
+- [My procedure](#my-procedure)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 - [Useful resources](#useful-resources)

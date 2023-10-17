@@ -3,7 +3,7 @@
 - [Overview Task List](#overview-task-list)
 - [Features](#features)
 - [Built With](#built-with)
-- [My process](#my-process)
+- [My procedure](#my-procedure)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 - [Useful resources](#useful-resources)

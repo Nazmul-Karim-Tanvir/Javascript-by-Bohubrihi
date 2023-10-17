@@ -1,10 +1,10 @@
 ## Table of contents
 
 - [Overview Shopping Cart](#overview-shopping-cart)
-- [Challenge](#challange)
+- [Challenge](#challenge)
 - [Features](#features)
 - [Built With](#built-with)
-- [My process](#my-process)
+- [My procedure](#my-procedure)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 - [Useful resources](#useful-resources)

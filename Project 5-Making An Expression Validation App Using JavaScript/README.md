@@ -1,10 +1,10 @@
 ## Table of contents
 
 - [Overview Expression Validation App](#overview-expression-validation-app)
-- [Challenge](#challange)
+- [Challenge](#challenge)
 - [Features](#features)
 - [Built With](#built-with)
-- [My process](#my-process)
+- [My procedure](#my-procedure)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 - [Useful resources](#useful-resources)
@@ -31,14 +31,11 @@ You can switch regular expressions by writing a switch condition
 
 After checking with regular expression it will show whether it is valid or invalid.  
 
-Put your code in the submission (link to drive or github) to verify that you have used the regular expression.
 
 ## Features
-- You can add a new product by clicking add to cart button.
-- product will show in Shopping Cart.  
-- You can remove a product from  clicking the Remove button next to it.
-- The Shopping Cart items are saved in the local storage of the browser, so they will persist even if you close or refresh the page.
-- product will show in Shopping Cart saction which is located below items and clicking View Shopping Cart will move page to Shopping Cart saction  
+- validation of email id
+- validation of phone number 
+- velidation of postal code BD
 
 ## Built With
 
@@ -50,13 +47,47 @@ Put your code in the submission (link to drive or github) to verify that you hav
 - Regular Expression 
 
 ## My Procedure
-To create this web application, I followed these steps:
 
-- I created an HTML file named index.html that displays a web page with four products: a camera, earphones, a laptop, and a computer. Each product has an image, a name, a description, and a price. The user can add any product to their shopping cart by clicking on the "Add to Cart" button. The shopping cart is shown at the bottom of the page with a list of the selected products. The code uses Bootstrap classes to style the elements and JavaScript to handle the events.
+```html
+ <!-- dropdown menu lets user choose what he wants to validate -->
+<div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            What you want to validate ?
+        </button>
+        <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Email</button></li>
+            <li><button class="dropdown-item" type="button">Phone Number</button></li>
+            <li><button class="dropdown-item" type="button">Post Code</button></li>
+        </ul>
+    </div>
+```
 
-- In my Script.js file I used different DOM and functions for creating, removing and storing items by using DOM manipulation methods, local storage methods, conditional statements, loops, and array methods.
+```js
+//defining the regular expression for email, phone number , postal code
+const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+const phoneRegex = /^\+?(\d{1,3})?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
+const postCodeRegex = /^[0-9]{4}$/;
+```
+```js
+//Regular expressin validate function 
 
-- I tested the web application by opening it in a web browser and performing some actions such as adding, deleting items and refreshing page.
+function validate(regex) {
+
+  const value = input.value;
+  const valid = regex.test(value);
+
+  if (valid === true) {
+    result.textContent = "Valid";
+    result.style.color = "green";
+  }
+  else {
+    result.textContent = "Invalid";
+    result.style.color = "red";
+  }
+
+}
+```
+
 
 ## Author
 
@@ -72,3 +103,4 @@ To create this web application, I followed these steps:
 ## Useful resources
 - [Bohubrihi](https://bohubrihi.com/) 
 - W3School
+- regular expression detail.txt
