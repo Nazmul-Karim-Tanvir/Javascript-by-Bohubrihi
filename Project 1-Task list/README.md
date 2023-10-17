@@ -53,11 +53,9 @@ To create this web application, I followed these steps:
 - LinkedIn - [@nazmul-karim-tanvir-795563159](https://www.linkedin.com/feed/)
 - GitHub - [Nazmul-Karim-Tanvir ](https://github.com/Nazmul-Karim-Tanvir)
 
-
 ## Acknowledgments
 
 - [Bohubrihi](https://bohubrihi.com/) - It helped me a lot learning the fundamentals of HTML and CSS and JavaScript
-
 
 ## Useful resources
 - [Bohubrihi](https://bohubrihi.com/) 
