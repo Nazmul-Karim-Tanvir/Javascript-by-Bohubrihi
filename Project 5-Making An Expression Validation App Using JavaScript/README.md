@@ -12,9 +12,8 @@
 ## Overview Expression Validation App
 This is a responsive web application that allows you to validate email,phone and postal code using regular expression.I used HTML, CSS, Bootstrap,JavaScript, DOM and Regular Expression to create a user friendly interface.
 
-- Desktop view![](image/desktop-view.JPG) 
-- Mobile view![](image/mobile-view-1.JPG)
--![](image/mobile-view-2.JPG)
+- Desktop view![](image/dasktop-view.JPG)
+- With result![](image/with-result.JPG) 
 
 ## Challenge
 You will make an app which will validate an expression whether it is correct or not.
@@ -68,6 +67,7 @@ const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 const phoneRegex = /^\+?(\d{1,3})?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
 const postCodeRegex = /^[0-9]{4}$/;
 ```
+
 ```js
 //Regular expressin validate function 
 
