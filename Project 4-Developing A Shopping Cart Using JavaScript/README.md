@@ -12,9 +12,9 @@
 ## Overview Shopping Cart
 This is a responsive web application that allows you to add and remove products in shopping cart.I used HTML, CSS, Bootstrap,JavaScript and DOM to create a user friendly interface and store/remove the products in the local storage of the browser.
 
-- Desktop view![](image/desktop-view.JPG) 
+- Desktop view![](image/desktop-view.jpg) 
 - Mobile view![](image/mobile-view-1.JPG)
--![](image/mobile-view-2.JPG)
+- ![](image/mobile-view-2.JPG)
 
 ## Challenge
 You will develop an e-commerce shopping cart where users can add or remove items from a list of products.
